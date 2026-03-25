@@ -27,6 +27,43 @@
             transform: translateY(-8px);
             box-shadow: 0 15px 25px rgba(0,0,0,0.3) !important;
         }
+        @media (max-width: 768px) {
+            /* Títulos principais */
+            h1#orientacoes, h2#rotina { font-size: 1.1rem !important; }
+            #sobre h2.display-6 { font-size: 1.1rem !important; }
+            
+            /* Cartões: Títulos e textos mínimos */
+            .card-title { font-size: 0.9rem !important; margin-bottom: 0.3rem !important; }
+            .card-text { 
+                font-size: 0.7rem !important; /* Letra super pequena */
+                line-height: 1.3 !important;
+            }
+            
+            /* Textos da seção Sobre */
+            #sobre .fs-5, #sobre p { 
+                font-size: 0.75rem !important; 
+                line-height: 1.4 !important; 
+                margin-bottom: 0.5rem !important;
+            }
+            
+            /* Ícones dos cartões minúsculos */
+            .card-body i { font-size: 1.1rem !important; margin-bottom: 0.5rem !important; }
+            
+            /* Botões bem fininhos e compactos */
+            .card-body .btn { 
+                font-size: 0.65rem !important; 
+                padding: 0.25rem 0.7rem !important; 
+            }
+
+            /* Rodapé bem enxuto */
+            footer h5.logo-text { font-size: 1rem !important; }
+            footer h6 { font-size: 0.8rem !important; margin-bottom: 0.5rem !important; }
+            footer p, footer .small, footer div { font-size: 0.65rem !important; }
+            
+            /* Ícones do WhatsApp e Mapa no rodapé menores */
+            footer .bi-whatsapp, footer .bi-geo-alt { font-size: 1.4rem !important; }
+        }
+        
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
@@ -75,7 +112,7 @@
                         <i class="bi bi-people-fill mb-3" style="font-size: 2.5rem; color: #00c4cc;"></i>
                         <h4 class="card-title fw-bold">Equipe gestora</h4>
                         <p class="card-text flex-grow-1 text-white-75" style="line-height: 1.6;">Conheça a equipe de diretores e coordenadores que gerencia o dia a dia da nossa escola com ética, dedicação e muito profissionalismo.</p>
-                        <a href="./img/equipe-gestora.png" target="_blank" class="btn btn-outline-info rounded-pill mt-3 fw-bold align-self-start">Ver foto da equipe</a>
+                        <a href="./img/equipe-gestora.png" target="_blank" class="btn btn-info rounded-pill mt-3 fw-bold align-self-start">Ver foto da equipe</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +123,7 @@
                         <i class="bi bi-journal-bookmark-fill mb-3" style="font-size: 2.5rem; color: #ffc107;"></i>
                         <h4 class="card-title fw-bold">Direitos e deveres</h4>
                         <p class="card-text flex-grow-1 text-white-75" style="line-height: 1.6;">Conheça o nosso Regimento Interno. Um guia com as normas, direitos e deveres fundamentais para garantir um ambiente de respeito e aprendizado.</p>
-                        <a href="./img/Regimento-escolar-2026.pdf" target="_blank" class="btn btn-outline-warning rounded-pill mt-3 fw-bold align-self-start">Ler regimento</a>
+                        <a href="./img/Regimento-escolar-2026.pdf" target="_blank" class="btn btn-warning rounded-pill mt-3 fw-bold align-self-start">Ler regimento</a>
                     </div>
                 </div>
             </div>
@@ -97,7 +134,7 @@
                         <i class="bi bi-map-fill mb-3" style="font-size: 2.5rem; color: #00ff15;"></i>
                         <h4 class="card-title fw-bold">Projeto Pedagógico</h4>
                         <p class="card-text flex-grow-1 text-white-75" style="line-height: 1.6;">O documento oficial (PPP) que detalha a identidade da nossa escola, nossas metas educativas e como trabalhamos para alcançá-las.</p>
-                        <a href="./img/PPP-2025-CELSO-RAMOS.pdf" target="_blank" class="btn btn-outline-success rounded-pill mt-3 fw-bold align-self-start">Acessar PPP</a>
+                        <a href="./img/PPP-2025-CELSO-RAMOS.pdf" target="_blank" class="btn btn-success rounded-pill mt-3 fw-bold align-self-start">Acessar PPP</a>
                     </div>
                 </div>
             </div>
@@ -108,7 +145,7 @@
                         <i class="bi bi-compass-fill mb-3" style="font-size: 2.5rem; color: #ff6b6b;"></i>
                         <h4 class="card-title fw-bold">Orientações Pedagógicas</h4>
                         <p class="card-text flex-grow-1 text-white-75" style="line-height: 1.6;">Consulte as diretrizes de ensino da escola, incluindo normas de avaliação, conselhos de classe e os procedimentos de apoio pedagógico.</p>
-                        <a href="./img/Orientações-escolares-Celso-Ramos.pdf" target="_blank" class="btn btn-outline-danger rounded-pill mt-3 fw-bold align-self-start">Ver diretrizes</a>
+                        <a href="./img/Orientações-escolares-Celso-Ramos.pdf" target="_blank" class="btn btn-danger rounded-pill mt-3 fw-bold align-self-start">Ver diretrizes</a>
                     </div>
                 </div>
             </div>
@@ -247,7 +284,7 @@
           <hr class="border-light border-opacity-25 my-4">
           
           <div class="text-center small text-white-50">
-              <strong class="mb-0 pb-0">Secretaria escolar: 34311437</p>
+              <strong class="mb-0 pb-0">Secretaria escolar: 34311437</strong>
               &copy; 2026 EEM Governador Celso Ramos. Todos os direitos reservados.
           </div>
           
