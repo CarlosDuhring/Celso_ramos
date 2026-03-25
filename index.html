@@ -18,31 +18,171 @@
         .logo-text {
           font-family: 'Poppins', sans-serif;
           font-weight: 700;
+          color:white
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
-  <body>
+  <body class="d-flex flex-column">
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
+      <div class="container-fluid ps-1">
         <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="./img/images.png"  alt="Logo" width="100" height="70" class="d-inline-block align-items-top">
-          <h5 class="mb-0 ms-0 me-5 logo-text">Celso Ramos</h5>
+          <img src="./img/images.png" alt="Logo" width="80" height="56" class="d-inline-block align-items-top">
+          
+          <h5 class="mb-0 ms-0 me-0 me-lg-5 logo-text">Celso Ramos</h5>
         </a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <div class="navbar-nav  ms-auto">
+            <a class="nav-link active fs-5 ms-auto" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link fs-5 ms-auto" href="#sobre">Sobre</a>
+            <a class="nav-link fs-5 ms-auto" href="#contatos">Contatos</a>
           </div>
         </div>
       </div>
     </nav>
+
+    
+    <section class="container mt-5">
+    
+      <div class="row mb-4">
+          <div class="col-12">
+              <h1 class="text-center logo-text text-light">Orientações escolares</h1>
+          </div>
+      </div>
+      
+      <div class="row g-4">
+          
+          <div class="col-sm-6">
+              <div class="card h-100 shadow-sm">
+                  <div class="card-body d-flex flex-column">
+                      <h5 class="card-title fw-bold">Equipe gestora</h5>
+                      <p class="card-text flex-grow-1">Conheça a equipe de diretores e coordenadores que gerencia o dia a dia da nossa escola com ética, dedicação e muito profissionalismo.</p>
+                      <a href="./img/equipe-gestora.png" target="_blank" class="btn btn-primary mt-auto">Ver mais</a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-sm-6">
+              <div class="card h-100 shadow-sm">
+                  <div class="card-body d-flex flex-column">
+                      <h5 class="card-title fw-bold">Direitos e deveres (Regimento)</h5>
+                      <p class="card-text flex-grow-1">Conheça o nosso Regimento Interno. Um guia com as normas, direitos e deveres fundamentais para garantir um ambiente escolar de respeito, harmonia e aprendizado.</p>
+                      <a href="./img/Regimento-escolar-2026.pdf" target="_blank" class="btn btn-primary mt-auto">Ver mais</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6">
+              <div class="card h-100 shadow-sm">
+                  <div class="card-body d-flex flex-column">
+                      <h5 class="card-title fw-bold">Projeto Político Pedagógico</h5>
+                      <p class="card-text flex-grow-1">O documento oficial que detalha a identidade da nossa escola, nossas metas educativas e como trabalhamos para alcançá-las.</p>
+                      <a href="./img/PPP-2025-CELSO-RAMOS.pdf" target="_blank" class="btn btn-primary mt-auto">Ver mais</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6">
+              <div class="card h-100 shadow-sm">
+                  <div class="card-body d-flex flex-column">
+                      <h5 class="card-title fw-bold">Orientações Pedagógicas</h5>
+                      <p class="card-text flex-grow-1">Consulte as diretrizes de ensino da escola, incluindo normas de avaliação, conselhos de classe e os procedimentos de apoio pedagógico.</p>
+                      <a href="./img/Orientações-escolares-Celso-Ramos.pdf" target="_blank" class="btn btn-primary mt-auto">Ver mais</a>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+  </section>
+
+
+    <section class="container flex-grow-1 py-5 text-light" id="sobre">
+      <div class="row justify-content-center">
+          <div class="col-12">
+              <h2 class="display-6 fw-bold mb-4 text-center logo-text">Sobre a EEM Governador Celso Ramos</h2>
+              
+              <div class="p-4 p-md-5 rounded-4 shadow" style="background-color: rgba(0, 0, 0, 0.25);">
+                  
+                  <p class="fs-5" style="line-height: 1.8;">
+                      Fundada em 1961, a <strong>Escola de Ensino Médio Governador Celso Ramos</strong> é uma das instituições públicas de ensino mais tradicionais e respeitadas de Joinville. Localizada no bairro Bucarein, nossa escola faz parte da história e da formação de milhares de joinvilenses ao longo de mais de seis décadas de dedicação à educação.
+                  </p>
+                  
+                  <p class="fs-5" style="line-height: 1.8;">
+                      Nosso objetivo sempre foi ir além da sala de aula tradicional. Buscamos oferecer um ensino público de qualidade, focando no desenvolvimento integral dos nossos jovens para que se tornem cidadãos críticos, éticos e preparados para os desafios do vestibular, do mercado de trabalho e da vida em sociedade.
+                  </p>
+                  
+                  <p class="fs-5" style="line-height: 1.8;">
+                      Hoje, além do Ensino Médio regular, a escola se destaca por oferecer o <strong>Curso Técnico em Magistério</strong>, formando novos educadores com excelência, e por projetos inovadores que englobam cultura, esportes e preparação para o ENEM.
+                  </p>
+                  
+                  <p class="fs-5" style="line-height: 1.8;">
+                      Nossa estrutura passou por grandes modernizações para atender melhor nossos alunos. Contamos com um dos maiores complexos esportivos escolares da rede pública estadual, ambientes acessíveis, biblioteca ampla e laboratórios equipados de química, biologia e informática. Tudo isso pensado para criar um ambiente harmonioso e estimulante.
+                  </p>
+                  
+                  <p class="fs-5 mb-0" style="line-height: 1.8;">
+                      Na EEM Governador Celso Ramos, acreditamos que a educação transforma realidades. Nossa missão é ser um espaço de inclusão e respeito, onde cada aluno encontra o apoio necessário para construir o seu próprio futuro.
+                  </p>
+                  
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <footer class="text-light py-5 mt-auto" style="background-color: rgba(0, 0, 0, 0.4); border-top: 4px solid #00c4cc;">
+      <div class="container">
+          <div class="row align-items-center text-center text-md-start">
+              
+              <div class="col-md-4 mb-5 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+                  <h5 class="logo-text mb-2 fs-3">Celso Ramos</h5>
+                  <p class="small text-white-75 mb-1">Escola de Ensino Médio<br>Governador Celso Ramos</p>
+                  <p class="small text-white-50 mt-2 mb-0"><i class="bi bi-geo-alt-fill me-1"></i> Joinville - SC</p>
+              </div>
+
+              <div class="col-md-4 mb-5 mb-md-0 d-flex flex-column align-items-center">
+                  <h6 class="text-uppercase fw-bold mb-3 text-white-50" id="contatos">Fale Conosco</h6>
+                  
+                  <div class="d-flex gap-4 mb-3">
+                      <a href="https://wa.me/554796791317?text=Olá,%20vim%20pelo%20site!%20Pode%20me%20ajudar?" target="_blank" class="text-light text-decoration-none">
+                          <i class="bi bi-whatsapp" style="font-size: 2.2rem;"></i>
+                      </a>
+                      <a href="https://maps.app.goo.gl/dv6xE67KUyGPSqDx9" target="_blank" class="text-light text-decoration-none">
+                          <i class="bi bi-geo-alt" style="font-size: 2.2rem;"></i>
+                      </a>
+                  </div>
+                  
+                  <div class="bg-dark bg-opacity-50 px-3 py-2 rounded-3 border border-light border-opacity-25">
+                      <i class="bi bi-telephone-fill me-2"></i><strong>(47) 3431-1437</strong>
+                  </div>
+              </div>
+
+              <div class="col-md-4 d-flex flex-column align-items-center align-items-md-end">
+                <div class="align-items-center">
+                    <h6 class="text-uppercase fw-bold mb-3 text-white-50">Siga nas Redes</h6>
+                    <a href="https://www.instagram.com/eemgovcelsoramos" target="_blank" class="btn btn-outline-light rounded-pill px-4 py-2 d-flex align-items-center gap-2 shadow-sm">
+                        <i class="bi bi-instagram fs-5"></i> Instagram
+                    </a>
+                </div>
+              </div>
+              
+          </div>
+          
+          <hr class="border-light border-opacity-25 my-4">
+          
+          <div class="text-center small text-white-50">
+              <strong class="mb-0 pb-0">Secretaria escolar: 34311437</p>
+              &copy; 2026 EEM Governador Celso Ramos. Todos os direitos reservados.
+          </div>
+          
+      </div>
+  </footer>
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
