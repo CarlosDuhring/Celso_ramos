@@ -53,6 +53,18 @@
             transform: scale(1.4); 
             cursor: pointer; 
         }
+        .carousel-item img {
+            width: 80% !important; /* Faz a foto ocupar menos espaço pros lados (MUDE AQUI SE QUISER MAIOR OU MENOR) */
+            margin: 0 auto; /* Centraliza a foto no meio da caixa */
+            display: block; /* Garante o centralizamento */
+            
+            /* Isso aqui é o que você quer: Altura livre e sem corte */
+            height: auto !important; 
+            object-fit: contain !important; /* Mostra a foto inteira sem cortar nada */
+            
+            /* OPCIONAL: Uma "segurança" para a foto não ficar absurdamente alta no PC */
+            max-height: 600px;
+        }
     
         @media (max-width: 768px) {
             h1#orientacoes, h2#rotina { font-size: 1.1rem !important; }
@@ -75,6 +87,10 @@
             .card-body .btn { 
                 font-size: 0.65rem !important; 
                 padding: 0.25rem 0.7rem !important; 
+            }
+            .carousel-item img {
+                width: 100% !important;
+                max-height: 400px; 
             }
 
             footer h5.logo-text { font-size: 1rem !important; }
@@ -260,6 +276,50 @@
               </div>
           </div>
       </div>
+    </section>
+
+    <section class="container mb-5 mt-5">
+        <div class="row justify-content-center">
+            
+            <div class="col-12">
+                
+                <div class="card border-0 rounded-4 shadow overflow-hidden card-hover" style="background-color: rgba(0, 0, 0, 0.25);">
+                    
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/logo.png"class="d-block w-100" style="object-position:top;" alt="Foto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/ft1.jpg" class="d-block w-100" style="object-position:top;" alt="Foto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/celso.jpeg" class="d-block w-100" alt="Foto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/turma.jpg" class="d-block w-100" alt="Foto 3">
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+
+                </div> </div>
+            
+        </div>
     </section>
 
     <footer class="text-light py-5 mt-auto" style="background-color: rgba(0, 0, 0, 0.4); border-top: 4px solid #00c4cc;">
