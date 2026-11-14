@@ -27,7 +27,7 @@ Todo o conteúdo é estático (HTML + CSS), sem build e sem dependências: basta
 |---|---|
 | **Início** | Apresentação da escola e atalhos para as áreas principais |
 | **Orientações escolares** | Equipe gestora, direitos e deveres, PPP e orientações pedagógicas |
-| **Rotina e Serviços** | Horários, merenda, secretaria e demais serviços do dia a dia |
+| **Rotina e Serviços** | Horário de aulas, calendário escolar, matrícula e acesso ao Estudante On-line |
 | **Sobre** | Identidade e história da escola |
 | **Contatos** | Telefone, endereço e canais de atendimento |
 
@@ -58,7 +58,7 @@ cd Celso_ramos
 - **HTML semântico** (`header`, `nav`, `section`, `footer`) para leitores de tela e SEO.
 - **Layout responsivo** com CSS Grid e Flexbox, sem framework.
 - **Contraste e foco visível** nos botões e links, pensando em acessibilidade.
-- **Zero dependências**: o site carrega rápido e funciona offline (exceto os PDFs).
+- **Zero dependências**: o site carrega rápido e funciona offline.
 
 ---
 
